@@ -1,0 +1,103 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+// Main Component
+
+.main--container {
+    padding: 1rem;
+    font-family: $main-font;
+    
+    .main--intro {
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+    }
+
+    .main--form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 4rem;
+
+        .main--search {
+            padding: 1rem;
+            font-family: $secondary-font;
+            font-size: 3rem;
+        }
+
+        .main--submit {
+            font-size: 2rem;
+            height: 2rem;
+            width: 2rem;
+            background-color: transparent;
+            cursor: pointer;
+            border: 0px;
+        }
+    }
+    
+    .main--noinput {
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        overflow-y: hidden
+    }
+
+    .main--noresults {
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        overflow-y: hidden
+    }
+
+    .movie--list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+// Movie Component
+
+.movie--image {
+    height: auto;
+    width: auto;
+    max-height: 28.125rem;
+    max-width: 18.75rem;
+    cursor: pointer;
+    border: $bd;
+}
+
+// Info Component
+
+.info--container {
+    border: $bd;
+    padding: 1rem;
+    height: 28.125rem;
+    width: 18.75rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $secondary-font;
+    
+    .info--title {
+        font-family: $main-font;
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .info--star {
+        padding-top: 5px;
+    }
+}
